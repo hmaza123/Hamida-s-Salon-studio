@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Hamida's Salon & Studio</title>
+  <meta name="description" content="Contact Hamida's Salon & Studio — phone, WhatsApp, email and Clifton location." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Outfit:wght@300;400;500;600&family=Syne:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></nav>
+        <p class="eyebrow">Contact</p>
+        <h1 class="page-title">Talk to the studio.</h1>
+        <p class="lead">Call, WhatsApp, or send an enquiry form — we reply as soon as possible.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container contact-layout">
+        <div>
+          <div class="contact-strip">
+            <div class="contact-item"><span>Call</span><strong><a href="tel:+923452433381">0345 2433381</a></strong></div>
+            <div class="contact-item"><span>Alternate</span><strong><a href="tel:+923362136647">0336 2136647</a></strong></div>
+            <div class="contact-item"><span>Email</span><strong><a href="mailto:hamidasalonstudio@gmail.com" data-email>hamidasalonstudio@gmail.com</a></strong></div>
+            <div class="contact-item"><span>WhatsApp</span><strong><a href="#" data-whatsapp>Chat with us</a></strong></div>
+            <div class="contact-item"><span>Social</span><strong>
+              <a href="https://www.instagram.com/hamidas_salon_studio/" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+              <a href="https://www.facebook.com/hamidassalonstudio/" target="_blank" rel="noopener noreferrer">Facebook</a> ·
+              <a href="https://www.tiktok.com/@hamidas_salon_studio" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </strong></div>
+          </div>
+        </div>
+        <div class="form-panel two-col" id="form-success">
+          <div class="form-success">
+            <h2 class="section-title" style="font-size:2rem">Message sent</h2>
+            <p class="form-note">Thanks — we will get back to you on email or phone.</p>
+            <a class="btn btn-whatsapp" href="#" data-whatsapp>WhatsApp instead</a>
+          </div>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact.html?success=true" data-contact>
+            <p class="honeypot"><label>Don’t fill: <input name="bot-field" /></label></p>
+            <input type="hidden" name="form-name" value="contact" />
+            <label><span>Name</span><input name="name" required /></label>
+            <label><span>Phone</span><input name="phone" required /></label>
+            <label class="full"><span>Email</span><input type="email" name="email" placeholder="Your email for reply" /></label>
+            <label class="full"><span>Message</span><textarea name="message" rows="5" required placeholder="How can we help?"></textarea></label>
+            <div class="form-actions full">
+              <button class="btn btn-primary" type="submit">Send enquiry</button>
+              <button class="btn btn-whatsapp" type="button" data-wa-from-form>WhatsApp</button>
+            </div>
+            <p class="form-note full">Notifications to hamidasalonstudio@gmail.com after Netlify setup.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <div data-site-footer></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

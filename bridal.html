@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bridal | Hamida's Salon & Studio</title>
+  <meta name="description" content="Bridal makeup and wedding beauty packages at Hamida's Salon & Studio, Clifton." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Outfit:wght@300;400;500;600&family=Syne:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="main">
+
+    <section class="page-hero dark">
+      <div class="container">
+        <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Bridal</span></nav>
+        <p class="eyebrow">Bridal</p>
+        <h1 class="page-title">Wedding beauty,<br />start to finish.</h1>
+        <p class="lead">Bridal makeup, hair, trials and full-day packages — crafted for mehndi, baraat and walima moments.</p>
+        <div class="btn-row">
+          <a class="btn btn-light" href="book.html">Book bridal consultation</a>
+          <a class="btn btn-whatsapp" href="#" data-whatsapp data-wa-msg="Hello Hamida's Salon & Studio, I want to book bridal services.">WhatsApp bridal desk</a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container tile-grid three">
+        <div class="tile"><h3>Bridal makeup</h3><p>Full bridal glam with long-wear finish.</p></div>
+        <div class="tile"><h3>Hair for the day</h3><p>Occasion styling to match your look.</p></div>
+        <div class="tile"><h3>Trials</h3><p>Plan your makeup and hair before the wedding.</p></div>
+      </div>
+      <div class="container" style="margin-top:2.5rem">
+        <div class="form-panel two-col" id="form-success">
+          <div class="form-success">
+            <h2 class="section-title" style="font-size:2rem">Request received</h2>
+            <p class="form-note">Thank you — we will reply on email / phone shortly. You can also WhatsApp us anytime.</p>
+            <a class="btn btn-whatsapp" href="#" data-whatsapp>Open WhatsApp</a>
+          </div>
+          <form name="bridal" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/bridal.html?success=true" data-booking>
+            <p class="honeypot"><label>Don’t fill: <input name="bot-field" /></label></p>
+            <input type="hidden" name="form-name" value="bridal" />
+            <input type="hidden" name="service" value="Bridal package" />
+            <label><span>Name</span><input name="name" required /></label>
+            <label><span>Phone</span><input name="phone" required /></label>
+            <label><span>Email</span><input type="email" name="email" placeholder="For studio reply" /></label>
+            <label><span>Wedding date</span><input type="date" name="date" /></label>
+            <label class="full"><span>Details</span><textarea name="notes" rows="4" placeholder="Mehndi / baraat / walima, guests, trial needed?"></textarea></label>
+            <div class="form-actions full">
+              <button class="btn btn-primary" type="submit">Send to studio email</button>
+              <button class="btn btn-whatsapp" type="button" data-wa-from-form>Send on WhatsApp</button>
+            </div>
+            <p class="form-note full">Form submissions go to <span data-email></span> via Netlify Forms after go-live.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <div data-site-footer></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
