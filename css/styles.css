@@ -8,7 +8,7 @@
   --white: #ffffff;
   --black: #0b0b0b;
   --gold: #b08a4d;
-  --wa: #128c4a;
+  --wa: #1b6b45;
   --wa-ink: #08351c;
   --shadow: 0 18px 50px rgba(17, 17, 17, 0.08);
   --radius: 18px;
@@ -201,8 +201,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 .nav-desktop a {
   text-decoration: none;
-  font-size: 0.78rem;
-  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
   opacity: 0.78;
 }
@@ -289,7 +289,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 .home-hero-veil {
   background:
-    linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.18) 35%, rgba(0,0,0,.72));
+    linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.28) 40%, rgba(0,0,0,.78));
 }
 
 .home-hero-content {
@@ -356,6 +356,12 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .tile-grid.four { grid-template-columns: repeat(4, 1fr); }
 .tile-grid.three { grid-template-columns: repeat(3, 1fr); }
 
+.tile,
+.contact-strip,
+.form-panel {
+  border-radius: 6px;
+}
+
 .tile {
   display: flex;
   flex-direction: column;
@@ -383,6 +389,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
+
+.tile .more::after { content: " →"; }
 
 .tile:hover { transform: translateY(-4px); border-color: var(--line-strong); }
 
