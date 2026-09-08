@@ -15,7 +15,6 @@ Multi-page marketing + booking website for **Hamida's Salon & Studio** (Clifton,
 ## Local preview
 
 ```bash
-cd hamidas-salon
 python3 -m http.server 5173
 ```
 
