@@ -167,31 +167,24 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
-.brand-script {
-  font-family: var(--font-script);
-  font-size: 2rem;
-  line-height: 1;
+.brand-logo {
+  display: block;
+  height: 46px;
+  width: auto;
+  max-width: min(230px, 52vw);
 }
 
-.brand-divider {
-  width: 1px;
-  height: 34px;
-  background: currentColor;
-  opacity: 0.35;
-}
+.brand-logo-on-dark { display: none; }
 
-.brand-block {
-  font-family: var(--font-brand);
-  font-size: 0.62rem;
-  line-height: 1.15;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
+.site-header.is-dark .brand-logo-on-light,
+.site-header.is-scrolled .brand-logo-on-light { display: none; }
+
+.site-header.is-dark .brand-logo-on-dark,
+.site-header.is-scrolled .brand-logo-on-dark { display: block; }
 
 .nav-desktop {
   display: flex;
@@ -299,19 +292,24 @@ button, input, select, textarea { font: inherit; color: inherit; }
   margin: 0 auto 7rem;
 }
 
-.home-brand {
-  font-family: var(--font-script);
-  font-size: clamp(3rem, 8vw, 6rem);
-  margin: 0;
-  line-height: 0.9;
+.home-logo {
+  display: block;
+  width: min(440px, 90vw);
+  height: auto;
+  margin: 0 0 1.1rem;
+  filter: drop-shadow(0 10px 28px rgba(0, 0, 0, 0.35));
 }
 
-.home-title {
-  font-family: var(--font-brand);
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  margin: 0.4rem 0 1rem;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .home-lead {
@@ -554,6 +552,14 @@ form textarea {
   display: grid;
   grid-template-columns: 1.3fr 1fr 1fr 1fr;
   gap: 2rem;
+}
+
+.footer-brand { display: inline-block; text-decoration: none; }
+.footer-logo {
+  display: block;
+  height: 52px;
+  width: auto;
+  margin-bottom: 1rem;
 }
 
 .site-footer h2,

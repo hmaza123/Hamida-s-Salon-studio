@@ -7,7 +7,7 @@ Multi-page marketing + booking website for **Hamida's Salon & Studio** (Clifton,
 1. **Static multi-page site** (no React build required) so it deploys cleanly on **Netlify free**.
 2. **15 public pages**: Home, About, Services hub, Hair, Makeup, Nails, Skin & Body, Bridal, Gallery, Packages, Book, Contact, Location, FAQ, Privacy.
 3. **Shared chrome** (`js/main.js`) injects header, footer, WhatsApp float, and active nav on every page.
-4. **Brand system** matches the logo: black/white contrast, script “Hamida’s” (`Great Vibes`) + bold stacked “Salon & Studio” (`Syne`), body in `Outfit`, display titles in `Cormorant Garamond`.
+4. **Brand system**: official Hamida’s lockup in header, footer and home hero; black/white contrast; body in `Outfit`, display titles in `Cormorant Garamond`.
 5. **Conversion on every path**: Book / Contact / Bridal forms + WhatsApp buttons + floating WhatsApp.
 6. **Email intake**: Netlify Forms → notify `hamidasalonstudio@gmail.com` (configure in Netlify after deploy).
 7. **WhatsApp**: `0345 2433381` (`wa.me/923452433381`) pre-filled messages from forms.
@@ -29,13 +29,13 @@ Open http://localhost:5173
 5. Forms → **Form notifications** → email **hamidasalonstudio@gmail.com**.
 6. Optional: set custom domain later.
 
-## Replace the official logo file
+## Logo
 
-If you have the final PNG/SVG export of the black logo:
-- Save as `assets/logo-official.png` (or `.svg`)
-- We can wire it into the header in a follow-up edit.
-
-Until then, the CSS lockup recreates the same structure (script name + divider + SALON & STUDIO).
+Official lockup lives in `assets/`:
+- `logo-official.jpg` — source
+- `logo.png` — white on transparent (hero)
+- `logo-header.png` / `logo-header-on-light.png` — header & footer
+- `favicon.png` — browser icon
 
 ## Business details used
 
