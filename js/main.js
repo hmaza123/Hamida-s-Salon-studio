@@ -91,7 +91,6 @@
           "</ul></div>" +
           "<div><h3>Contact</h3><ul>" +
             '<li><a href="tel:+923452433381">0345 2433381</a></li>' +
-            '<li><a href="tel:+923362136647">0336 2136647</a></li>' +
             '<li><a href="mailto:' + EMAIL + '">' + EMAIL + "</a></li>" +
             '<li><a href="' + waUrl() + '" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>' +
           "</ul></div>" +

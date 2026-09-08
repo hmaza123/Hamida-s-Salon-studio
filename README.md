@@ -41,7 +41,7 @@ Official lockup lives in `assets/`:
 
 | Item | Value |
 |---|---|
-| Phone | 0345 2433381 / 0336 2136647 |
+| Phone | 0345 2433381 |
 | WhatsApp | 0345 2433381 |
 | Email | hamidasalonstudio@gmail.com |
 | Address | House F67/A, Clifton Block 8, opp. Bacha Party |
