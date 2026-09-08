@@ -34,10 +34,9 @@
       '<a class="skip-link" href="#main">Skip to content</a>' +
       '<header class="site-header' + (dark ? " is-dark" : "") + '">' +
         '<div class="header-inner">' +
-          '<a class="brand" href="' + root + 'index.html" aria-label="Hamida\'s Salon & Studio home">' +
-            '<span class="brand-script">Hamida\'s</span>' +
-            '<span class="brand-divider" aria-hidden="true"></span>' +
-            '<span class="brand-block">Salon<br />&amp; Studio</span>' +
+          '<a class="brand" href="' + root + 'index.html">' +
+            '<img class="brand-logo brand-logo-on-light" src="' + root + 'assets/logo-header-on-light.png" width="298" height="96" alt="Hamida\'s Salon &amp; Studio" />' +
+            '<img class="brand-logo brand-logo-on-dark" src="' + root + 'assets/logo-header.png" width="298" height="96" alt="" />' +
           "</a>" +
           '<nav class="nav-desktop" aria-label="Primary">' +
             navLink("index.html", "Home", "index") +
@@ -80,7 +79,9 @@
       '<footer class="site-footer">' +
         '<div class="container footer-grid">' +
           "<div>" +
-            "<h2>Hamida's Salon &amp; Studio</h2>" +
+            '<a class="footer-brand" href="' + root + 'index.html">' +
+              '<img class="footer-logo" src="' + root + 'assets/logo-header.png" width="298" height="96" alt="Hamida\'s Salon &amp; Studio" />' +
+            "</a>" +
             "<p>Full-service beauty in Clifton Block 8 — hair, bridal makeup, nails, skin and finishing.</p>" +
           "</div>" +
           "<div><h3>Visit</h3><ul>" +
