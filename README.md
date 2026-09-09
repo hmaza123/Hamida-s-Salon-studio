@@ -47,7 +47,7 @@ Official lockup lives in `assets/`:
 | Address | House F67/A, Clifton Block 8, opp. Bacha Party |
 | Instagram | @hamidas_salon_studio |
 | Facebook | /hamidassalonstudio |
-| TikTok | @hamidas_salon_studio |
+| TikTok | @hamidassalonstudio |
 
 ## GitHub
 
