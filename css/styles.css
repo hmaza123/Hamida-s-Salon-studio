@@ -263,6 +263,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   place-items: end start;
   color: #fff;
   overflow: hidden;
+  background: #0a0a0a;
 }
 
 .home-hero-media,
@@ -272,11 +273,15 @@ button, input, select, textarea { font: inherit; color: inherit; }
   inset: 0;
 }
 
+.home-hero-media {
+  top: var(--header);
+}
+
 .home-hero-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center top;
 }
 
 .home-hero-veil {
