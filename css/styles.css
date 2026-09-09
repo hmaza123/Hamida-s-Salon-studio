@@ -329,6 +329,39 @@ button, input, select, textarea { font: inherit; color: inherit; }
   margin: 0;
 }
 
+.social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.35rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  background: rgba(0,0,0,.28);
+}
+
+.social-icon svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.social-icon:hover {
+  background: #fff;
+  color: #111;
+}
+
 /* Page heroes */
 .page-hero {
   padding: 5.5rem 0 2.5rem;
