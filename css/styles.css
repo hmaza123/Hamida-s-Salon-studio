@@ -289,10 +289,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .home-hero-stage {
   position: relative;
   z-index: 1;
+  min-width: 0;
+  width: min(100%, calc((100svh - var(--header)) * 852 / 1280));
   height: var(--hero-h);
-  width: auto;
   max-width: 100%;
-  aspect-ratio: 852 / 1280;
+  overflow: hidden;
   justify-self: center;
   box-shadow: 0 0 0 1px rgba(255,255,255,.06), 0 24px 80px rgba(0,0,0,.45);
 }
@@ -361,6 +362,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
   color: rgba(255,255,255,.82);
   margin: 0;
   overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.home-hero .social-row {
+  max-width: 100%;
 }
 
 .social-row {
