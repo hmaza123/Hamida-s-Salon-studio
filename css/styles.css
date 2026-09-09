@@ -255,15 +255,24 @@ button, input, select, textarea { font: inherit; color: inherit; }
   font-size: 0.85rem;
 }
 
-/* Home hero */
+/* Home hero — portrait photo (852×1280) scales to the viewport without ultrawide zoom */
 .home-hero {
+  --hero-h: calc(100svh - var(--header));
   position: relative;
   min-height: 100svh;
   display: grid;
-  place-items: end start;
+  place-items: center;
   color: #fff;
   overflow: hidden;
   background: #0a0a0a;
+  padding-top: var(--header);
+}
+
+.home-hero-stage {
+  position: relative;
+  width: min(100%, calc(var(--hero-h) * 852 / 1280));
+  height: var(--hero-h);
+  max-width: 100%;
 }
 
 .home-hero-media,
@@ -273,13 +282,10 @@ button, input, select, textarea { font: inherit; color: inherit; }
   inset: 0;
 }
 
-.home-hero-media {
-  top: var(--header);
-}
-
 .home-hero-media img {
   width: 100%;
   height: 100%;
+  max-width: none;
   object-fit: cover;
   object-position: center top;
 }
@@ -291,10 +297,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
 }
 
 .home-hero-content {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  width: min(1120px, calc(100% - 2.4rem));
-  margin: 0 auto 5.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  margin: 0;
+  padding: 0 1.25rem 2.4rem;
 }
 
 .cta-band-slim {
@@ -678,7 +688,14 @@ html.js .delay-3 { transition-delay: 0.3s; }
 
   .nav-desktop { display: none; }
   .nav-toggle { display: inline-flex; }
-  .home-hero-content { margin-bottom: 5rem; }
+  .home-hero-content { padding-bottom: 2rem; }
+}
+
+@media (orientation: landscape) and (max-height: 560px) {
+  .home-hero-stage {
+    width: 100%;
+    height: var(--hero-h);
+  }
 }
 
 @media (max-width: 640px) {
